@@ -1,12 +1,10 @@
 import React from 'react';
-import '../styles/AboutMe.css';          // Ensure the path is correct
-import profileImage from '../assets/images/profile.jpg'; // Ensure the path is correct
+import '../styles/AboutMe.css'; // Ensure the path is correct
 
 function AboutMe() {
   return (
     <div className="about-me">
-      <img src={profileImage} alt="Profile" />
-      <h1>About Me</h1>
+      <h1>Sobre Mi</h1>
       <section className="mission-vision-values">
         <h2>Misión</h2>
         <p>

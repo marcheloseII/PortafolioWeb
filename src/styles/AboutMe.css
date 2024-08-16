@@ -1,19 +1,12 @@
 .about-me {
     padding: 2rem;
     text-align: center;
-    background-color: #f0f8ff; /* Light blue background for the section */
+    background-color: #e6f0ff; /* Light blue background for the section */
     border-radius: 8px;
-    border: 1px solid #d3d3d3; /* Light gray border for the section */
+    border: 1px solid #b3d9ff; /* Lighter blue border for the section */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.about-me img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 1rem;
-    border: 4px solid #ffcc00; /* Yellow border around the profile image */
+    margin: 0 auto; /* Center the section */
+    max-width: 1000px; /* Max width for larger screens */
 }
 
 .about-me h1 {
@@ -24,7 +17,6 @@
 
 .mission-vision-values {
     text-align: left;
-    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -50,4 +42,26 @@
     font-size: 1.1rem;
     color: #003366; /* Dark blue color for list items */
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        padding: 1rem;
+    }
+
+    .mission-vision-values {
+        text-align: center;
+    }
+
+    .mission-vision-values h2 {
+        font-size: 1.5rem;
+    }
+
+    .mission-vision-values p {
+        font-size: 1rem;
+    }
+
+    .mission-vision-values ul {
+        margin-left: 0;
+    }
 }

@@ -5,8 +5,7 @@ import ProjectsPage from './pages/ProjectsPage';
 import ContactPage from './pages/ContactPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import './styles/App.css'; // Import global styles here
-
+import './styles/App.css'; 
 function App() {
   return (
     <Router>

@@ -15,7 +15,7 @@ const Header = () => {
         <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
       <div className="header-actions">
-        <button className="download-btn" onClick={() => window.open('/assets/pdf/cv.pdf', '_blank')}>
+        <button className="download-btn" onClick={() => window.open('/assests/pdf/CV Asdrubal Marcelo Segura Esquivel.docx.pdf', '_blank')}>
           Download CV
         </button>
         <div className="language-switcher">

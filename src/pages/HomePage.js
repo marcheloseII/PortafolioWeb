@@ -1,12 +1,11 @@
 // src/pages/HomePage.js
 import React from 'react';
-import ProjectsPage from './ProjectsPage'; // Asegúrate de que la ruta es correcta
+import AboutMe from '../components/AboutMe';// Ensure the path is correct
 
 function HomePage() {
   return (
     <div>
-      <h1>Welcome to My Portfolio</h1>
-      <ProjectsPage />
+      <AboutMe />
     </div>
   );
 }
