@@ -1,12 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
 import '../styles/Header.css';
 
 const Header = () => {
-  const handleLanguageChange = (event) => {
-    // Handle language change logic here
-  };
-
   return (
     <header>
       <nav>
@@ -15,18 +12,14 @@ const Header = () => {
         <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
       <div className="header-actions">
-        <button className="download-btn" onClick={() => window.open('/assests/pdf/CV Asdrubal Marcelo Segura Esquivel.docx.pdf', '_blank')}>
+        <a href="/assets/pdf/CV.pdf" download="CV.pdf" className="download-btn">
           Download CV
-        </button>
-        <div className="language-switcher">
-          <select onChange={handleLanguageChange} defaultValue="en">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-          </select>
-        </div>
+        </a>
+        <LanguageSwitcher />
       </div>
     </header>
   );
 };
 
 export default Header;
+
