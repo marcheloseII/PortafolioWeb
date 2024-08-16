@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div>
       <h1>Welcome to My Portfolio</h1>
-      <ProjectsPage /> {/* Asegúrate de que el componente está importado correctamente */}
+      <ProjectsPage />
     </div>
   );
 }
