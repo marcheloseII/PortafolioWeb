@@ -1,0 +1,17 @@
+/* Estilos para el componente Footer */
+
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    color: #adb5bd;
+}

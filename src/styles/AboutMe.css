@@ -1,0 +1,24 @@
+/* Estilos para la sección AboutMe */
+
+.about-me {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.about-me img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.about-me h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-me p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
