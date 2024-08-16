@@ -7,7 +7,7 @@ import ProjectsPage from './ProjectsPage';
 const ProjectsPage = () => {
   // Ejemplo de proyectos
   const projects = [
-    { id: 1, title: 'Proyecto 1', description: 'Descripción del Proyecto 1', image: '/path/to/image1.jpg' },
+    { id: 1, title: 'Proyecto 1', description: 'Descripción del Proyecto 1', image: '.\PortafolioWeb\src\assests\images\APps.jpg' },
     // Agrega más proyectos aquí
   ];
 
