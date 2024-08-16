@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/AboutMe.css'; // Asegúrate de que la ruta sea correcta
-import profileImage from '../assets/images/profile.jpg'; // Importa la imagen
 
 function AboutMe() {
   return (
