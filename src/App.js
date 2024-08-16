@@ -1,17 +1,13 @@
 // src/App.js
+
 import React from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import HomePage from './pages/HomePage';
+import ProjectsPage from './pages/ProjectsPage';  // Asegúrate de que esta importación es correcta
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <main>
-        <HomePage />
-      </main>
-      <Footer />
+      <ProjectsPage />
+      {/* Otros componentes */}
     </div>
   );
 }
