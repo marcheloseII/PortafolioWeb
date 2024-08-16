@@ -4,7 +4,6 @@ import '../styles/ContactForm.css'; // Ensure this path is correct
 function ContactForm() {
   return (
     <div className="contact-form-container">
-      <h2 className="contact-form-title">Contact Form</h2>
       <p className="contact-info">
         <strong>Email:</strong> Chelosegura_95@hotmail.com<br />
         <strong>Phone:</strong> +506 8731-9323<br />

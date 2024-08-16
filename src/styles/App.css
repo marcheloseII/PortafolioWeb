@@ -12,6 +12,7 @@ body {
   color: #343a40; /* Dark text color for readability */
   display: flex;
   flex-direction: column;
+  padding-top: 4rem; /* Adjust this value based on the header's height */
 }
 
 .app {
@@ -34,6 +35,11 @@ header {
   background: #0033cc; /* Blue color */
   color: #fff;
   padding: 1rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensures the header stays above other content */
 }
 
 /* Button styles */
