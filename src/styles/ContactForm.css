@@ -1,28 +1,83 @@
-/* src/components/ContactForm.css */
+/* Container for the contact form */
+.contact-form-container {
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Maximum width */
+  margin: auto; /* Center the form */
+}
 
-/* Estilos básicos para el formulario de contacto */
-form {
-    display: flex;
-    flex-direction: column;
+/* Title of the contact form */
+.contact-form-title {
+  font-size: 24px;
+  color: #0056b3; /* Blue color */
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Contact information section */
+.contact-info {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Style for input fields, textarea, and select */
+input, textarea, select {
+  margin-bottom: 20px; /* Increased margin for vertical spacing */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  width: 100%; /* Ensure full width for inputs and textarea */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Placeholder text style */
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+
+/* Style for the submit button */
+button {
+  padding: 12px;
+  border: none;
+  background-color: #0056b3; /* Primary blue color */
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* Full width for the button */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Hover effect for the submit button */
+button:hover {
+  background-color: #003d7a; /* Darker blue for hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .contact-form-container {
+    padding: 15px;
   }
-  
-  input, textarea {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+
+  input, textarea, select {
+    font-size: 14px;
   }
-  
+
   button {
-    padding: 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
+    font-size: 14px;
   }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
+}
+
+/* Link styles */
+a {
+  color: #007bff; /* Link color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

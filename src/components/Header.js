@@ -1,6 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Ensure react-router-dom is installed
-import '../styles/Header.css'; // Ensure the path is correct
+import { Link } from 'react-router-dom';
+import LanguageSwitcher from './LanguageSwitcher';
+import '../styles/Header.css';
 
 const Header = () => {
   return (
@@ -10,11 +11,15 @@ const Header = () => {
         <Link to="/projects" className="nav-link">Projects</Link>
         <Link to="/contact" className="nav-link">Contact</Link>
       </nav>
-      <button className="download-btn" onClick={() => window.open('/assets/pdf/cv.pdf', '_blank')}>
-        Download CV
-      </button>
+      <div className="header-actions">
+        <a href="/assets/pdf/CV.pdf" download="CV.pdf" className="download-btn">
+          Download CV
+        </a>
+        <LanguageSwitcher />
+      </div>
     </header>
   );
 };
 
 export default Header;
+

@@ -1,15 +1,14 @@
 // src/pages/ProjectsPage.js
 
 import React from 'react';
-import './ProjectsPage.css';  // Asegúrate de tener este archivo si estás usando estilos específicos para esta página
 import './ProjectsPage.css';
-
+import APpsImage from '../assets/images/APps.jpg';  // Import the image
 
 const ProjectsPage = () => {
-  // Ejemplo de proyectos
+  // Example projects
   const projects = [
-    { id: 1, title: 'Proyecto 1', description: 'Descripción del Proyecto 1', image: './assets/images/APps.jpg' },
-    // Agrega más proyectos aquí
+    { id: 1, title: 'My Daily Task App', description: 'Aplicacion de tareas diarias', image: APpsImage },
+    // Add more projects here
   ];
 
   return (

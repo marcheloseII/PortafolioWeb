@@ -1,17 +1,30 @@
 /* Estilos para el componente Footer */
 
+/* Background color is a gradient of blue (60%) and a lighter shade (for visual interest) */
 footer {
-    background-color: #343a40;
-    color: #ffffff;
+    background: linear-gradient(to right, #007bff 60%, #f0f0f0 60%);
+    color: #343a40; /* Dark color for text */
     padding: 1rem 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.875rem;
 }
 
 footer a {
-    color: #ffffff;
+    color: #f39c12; /* Yellow color */
     margin: 0 0.5rem;
+    text-decoration: none; /* Remove underline */
 }
 
 footer a:hover {
-    color: #adb5bd;
+    color: #e74c3c; /* Red color for hover effect */
+}
+
+/* Add a subtle shadow for better visibility on dark backgrounds */
+footer {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
