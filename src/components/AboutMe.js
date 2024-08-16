@@ -1,15 +1,16 @@
+// src/components/AboutMe.js
 import React from 'react';
-import './AboutMe.css';
-import profileImage from '../assets/images/profile.jpg';
+import '../styles/AboutMe.css';          // Asegúrate de que la ruta es correcta
+import profileImage from '../assets/images/profile.jpg'; // Asegúrate de que la ruta es correcta
 
-const AboutMe = () => {
-    return (
-        <section className="about-me">
-            <img src={profileImage} alt="Profile" />
-            <h1>Hello, I'm Your Name</h1>
-            <p>Brief introduction about yourself and your professional background.</p>
-        </section>
-    );
-};
+function AboutMe() {
+  return (
+    <div className="about-me">
+      <img src={profileImage} alt="Profile" />
+      <h1>About Me</h1>
+      {/* Contenido de la sección */}
+    </div>
+  );
+}
 
 export default AboutMe;

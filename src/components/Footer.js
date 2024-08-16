@@ -1,12 +1,13 @@
+// src/components/Footer.js
 import React from 'react';
-import './Footer.css';
+import '../styles/Footer.css'; // Asegúrate de que la ruta es correcta
 
-const Footer = () => {
-    return (
-        <footer className="footer">
-            <p>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
-        </footer>
-    );
-};
+function Footer() {
+  return (
+    <footer>
+      <p>&copy; 2024 Your Portfolio</p>
+    </footer>
+  );
+}
 
 export default Footer;

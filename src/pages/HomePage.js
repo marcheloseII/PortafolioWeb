@@ -1,19 +1,14 @@
 // src/pages/HomePage.js
 import React from 'react';
-import Header from '../components/Header';
-import AboutMe from '../components/AboutMe';
-import ProjectsPage from './ProjectsPage';
-import Footer from '../components/Footer';
+import ProjectsPage from './ProjectsPage'; // Asegúrate de que la ruta es correcta
 
-const HomePage = () => {
+function HomePage() {
   return (
     <div>
-      <Header />
-      <AboutMe />
-      <ProjectsPage />
-      <Footer />
+      <h1>Welcome to My Portfolio</h1>
+      <ProjectsPage /> {/* Asegúrate de que el componente está importado correctamente */}
     </div>
   );
-};
+}
 
 export default HomePage;
