@@ -1,9 +1,7 @@
-/* Estilos para el componente Header */
-
 header {
     background-color: #003366; /* Dark blue background (60%) */
     color: #ffffff; /* White text */
-    padding: 1rem 0;
+    padding: 0.5rem 1rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -12,11 +10,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in total width */
 }
 
 nav {
     display: flex;
     gap: 1rem;
+    flex: 1;
 }
 
 .nav-link {
@@ -33,6 +34,13 @@ nav {
     color: #003366; /* Dark blue text on hover */
 }
 
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto; /* Pushes header actions to the right */
+}
+
 .download-btn {
     background-color: #cc0000; /* Red background (10%) */
     color: #ffffff; /* White text */
@@ -45,4 +53,55 @@ nav {
 
 .download-btn:hover {
     background-color: #990000; /* Darker red on hover */
+}
+
+.language-switcher {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher select {
+    background-color: #ffffff;
+    color: #003366;
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem; /* Space between button and select */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .header-actions {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .download-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .language-switcher {
+        width: 100%;
+        margin-top: 0.5rem;
+    }
+
+    .language-switcher select {
+        width: 100%;
+    }
 }

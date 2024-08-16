@@ -1,8 +1,10 @@
-/* Estilos para la sección AboutMe */
-
 .about-me {
-    padding: 2rem 0;
+    padding: 2rem;
     text-align: center;
+    background-color: #f0f8ff; /* Light blue background for the section */
+    border-radius: 8px;
+    border: 1px solid #d3d3d3; /* Light gray border for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .about-me img {
@@ -11,14 +13,41 @@
     height: 150px;
     object-fit: cover;
     margin-bottom: 1rem;
+    border: 4px solid #ffcc00; /* Yellow border around the profile image */
 }
 
 .about-me h1 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Dark blue color for the main heading */
+}
+
+.mission-vision-values {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mission-vision-values h2 {
+    font-size: 1.8rem;
+    color: #cc0000; /* Red color for section headings */
     margin-bottom: 0.5rem;
 }
 
-.about-me p {
+.mission-vision-values p {
     font-size: 1.1rem;
     line-height: 1.6;
+    color: #333333; /* Dark gray color for text */
+    margin-bottom: 1rem;
+}
+
+.mission-vision-values ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.mission-vision-values li {
+    font-size: 1.1rem;
+    color: #003366; /* Dark blue color for list items */
+    margin-bottom: 0.5rem;
 }

@@ -1,30 +1,59 @@
 /* Estilos para las tarjetas de proyecto */
 
 .project-card {
-    background-color: #ffffff;
-    border: 1px solid #dee2e6;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff; /* White background for clarity */
+    border: 2px solid #007bff; /* Blue border for prominence */
+    border-radius: 0.75rem; /* Slightly rounded corners */
+    padding: 1.5rem; /* Increased padding for more spacious content */
+    margin-bottom: 1.75rem; /* Increased margin for better spacing */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Relative positioning for pseudo-elements */
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #ffcc00; /* Yellow accent */
+    border-radius: 0.75rem 0 0 0.75rem; /* Rounded top-left corner */
 }
 
 .project-card:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
 .project-card img {
     width: 100%;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem; /* Space between image and text */
 }
 
-.project-card h2 {
+.project-card h3 {
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem; /* Adjusted top margin */
     margin-bottom: 0.5rem;
+    color: #007bff; /* Blue color for title */
 }
 
 .project-card p {
     font-size: 1rem;
-    color: #6c757d;
+    color: #6c757d; /* Grey color for description */
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #dc3545; /* Red color for the link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.project-card a:hover {
+    color: #c82333; /* Darker red on hover */
 }
