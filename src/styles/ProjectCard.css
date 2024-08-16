@@ -11,41 +11,33 @@
     position: relative; /* Relative positioning for pseudo-elements */
 }
 
-.project-card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background-color: #ffcc00; /* Yellow accent */
-    border-radius: 0.75rem 0 0 0.75rem; /* Rounded top-left corner */
+.project-card-header {
+    display: flex;
+    align-items: center; /* Align items vertically in the center */
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.project-card-image {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    border-radius: 0.5rem; /* Slightly rounded corners for the image */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-right: 1rem; /* Space between image and title */
 }
 
-.project-card img {
-    width: 100%;
-    border-radius: 0.75rem;
-    margin-bottom: 1rem; /* Space between image and text */
+.project-card-title {
+    font-size: 1.25rem; /* Font size for the title */
+    color: #007bff; /* Blue color for the title */
+    margin: 0; /* Remove default margins */
 }
 
-.project-card h3 {
-    font-size: 1.5rem;
-    margin-top: 0.5rem; /* Adjusted top margin */
-    margin-bottom: 0.5rem;
-    color: #007bff; /* Blue color for title */
+.project-card-description {
+    font-size: 1rem; /* Font size for the description */
+    color: #6c757d; /* Grey color for the description */
+    margin-top: 1rem; /* Space above the description */
+    line-height: 1.5; /* Increased line height for readability */
 }
 
-.project-card p {
-    font-size: 1rem;
-    color: #6c757d; /* Grey color for description */
-}
-
-.project-card a {
+.project-card-link {
     display: inline-block;
     margin-top: 0.5rem;
     color: #dc3545; /* Red color for the link */
@@ -54,6 +46,6 @@
     transition: color 0.3s ease-in-out;
 }
 
-.project-card a:hover {
+.project-card-link:hover {
     color: #c82333; /* Darker red on hover */
 }

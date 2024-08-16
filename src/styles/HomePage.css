@@ -1,0 +1,59 @@
+/* src/styles/HomePage.css */
+.home-page {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header-section {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .header-section h1 {
+    font-size: 2.5rem;
+    color: #003366; /* Dark blue color for the name */
+  }
+  
+  .profile-image {
+    display: block;
+    margin: 20px auto;
+    width: 200px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    border-radius: 50%; /* Opcional: para hacer la imagen circular */
+  }
+  
+  .main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .left-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #e6f0ff; /* Light blue background for the section */
+    border-radius: 8px;
+    border: 1px solid #b3d9ff; /* Lighter blue border for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .right-column {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray background for the section */
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Gray border for the section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  @media (max-width: 768px) {
+    .main-content {
+      flex-direction: column;
+    }
+  
+    .left-column, .right-column {
+      margin-bottom: 20px;
+    }
+  }
+  
