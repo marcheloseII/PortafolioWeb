@@ -5,7 +5,7 @@ import '../styles/Footer.css'; // Asegúrate de que la ruta es correcta
 function Footer() {
   return (
     <footer>
-      <p>&copy; 2024 Your Portfolio</p>
+      <p>&copy; 2024 "Codificando la era digital, un byte a la vez." - Asdru</p>
     </footer>
   );
 }
